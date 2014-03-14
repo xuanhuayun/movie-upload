@@ -1,0 +1,1906 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/ProximaNova-Light.otf');
+}
+
+*,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.2s;
+	font-family: "Proxima Nova Light", "Verdana", "Arial", "Helvetica";
+	font-weight: 100;
+	color: #DDD;
+}
+
+.mouseMask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/mouseMask.png);
+}
+
+body {
+	font-family: "Proxima Nova Light", "Verdana", "Arial", "Helvetica";
+	font-weight: 100;
+	color: #DDD;
+	margin: 0px;
+	line-height: 1.42857;
+}
+
+.homeBody {
+	background: url(../images/homepageBackground_1px.jpg) repeat-x \9;
+	background-color: #000000 \9;
+	background: url(../images/homepageBackground.jpg) no-repeat top,
+		url(../images/homepageBackground_1px.jpg) repeat-x, #000000;
+}
+
+.seriesBody {
+	background: url(../images/seriespageBackground_1px.jpg) repeat-x \9;
+	background-color: #000000 \9;
+	background: url(../images/seriespageBackground.jpg) no-repeat top,
+		url(../images/seriespageBackground_1px.jpg) repeat-x, #000000;
+}
+
+.backgorundForIE8 {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -630px;
+	width: 1260px;
+	height: 977px;
+	background: url(../images/homepageBackground.jpg) no-repeat top;
+	z-index: -1;
+}
+
+.seriesbackgorundForIE8 {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -630px;
+	width: 1260px;
+	height: 977px;
+	background: url(../images/seriespageBackground.jpg) no-repeat top;
+	z-index: -1;
+}
+
+body div {
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearLeft {
+	clear: left;
+}
+
+.clearRight {
+	clear: right;
+}
+
+a,a:focus,a:active,a:visited {
+	outline: none;
+	text-decoration: none;
+	color: #DDDDDD;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-weight: 100;
+	line-height: 1;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 10px;
+}
+
+header h3 {
+	transition: all 0.2s;
+}
+
+.homepageBackground {
+	background: url(../images/homepageBackground.png) no-repeat top,
+		url(../images/homepageBackground_1px.png) repeat-x;
+	height: 977px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.widthFix {
+	width: 2000px;
+}
+
+ul,li {
+	margin: 0;
+}
+/*	CSS for customized radio buttons and check boxes */
+
+/*	wrapper divs */
+.custom-checkbox,.custom-radio {
+	position: relative;
+	float: right;
+	width: 173px;
+	height: 20px;
+	margin-bottom: 5px;
+}
+/* input, label positioning */
+.custom-checkbox input,.custom-radio input {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	z-index: 0;
+}
+
+.custom-checkbox label,.custom-radio label {
+	display: block;
+	width: 170px;
+	height: 20px;
+	position: relative;
+	z-index: 1;
+	line-height: 21px;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 0px 10px 0px 25px;
+}
+/* states */
+.custom-checkbox label {
+	background: url(../images/SR_PT_CheckBox1.png) no-repeat;
+}
+
+.custom-radio label {
+	background: url(../images/radiobutton.png) no-repeat;
+	height: 10px
+}
+
+.custom-checkbox label,.custom-radio label {
+	background: url(../images/SR_PT_CheckBox1.png) no-repeat;
+}
+
+.custom-checkbox label.hover {
+	background: url(../images/SR_PT_CheckBox2.png) no-repeat;
+}
+
+.custom-radio label.hover,.custom-radio label.focus {
+	background: url(../images/SR_PT_CheckBox2.png) no-repeat;
+}
+
+.custom-checkbox label.checked {
+	background: url(../images/SR_PT_CheckBox3.png) no-repeat;
+}
+
+.custom-radio label.checked {
+	background: url(../images/SR_PT_CheckBox3.png) no-repeat;
+}
+
+.custom-checkbox label.checkedHover {
+	background: url(../images/SR_PT_CheckBox4.png) no-repeat;
+}
+
+.custom-checkbox label.checkedFocus {
+	background: url(../images/SR_PT_CheckBox4.png) no-repeat;
+}
+
+.custom-checkbox label.focus {
+	outline: none;
+}
+
+.custom-radio label.focus {
+	outline: 1px dotted #ccc;
+}
+
+.checkbox_label_style {
+	width: 0px;
+	font-size: 9px;
+}
+
+.checkbox_status {
+	height: 6px;
+	line-height: 6px
+}
+/* Checkbox & Radiobutton Setup Complete */
+
+/*Header======================================*/
+header {
+	height: 80px;
+	width: 1060px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.HeaderLogo {
+	width: 100%;
+	height: 90px;
+	position: relative;
+}
+
+.dropdownlist,.homeCatelogDropdownCT {
+	width: 100px;
+	border: 1px solid #000000;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border-top: 1px solid #555;
+	border-left: 1px solid #555;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.homeCatelogDropdownCT {
+	height: 22px;
+	background: url(../images/footerBackground.png) \9;
+	background: url(../images/footerBackground.png) repeat;
+	float: right;
+	border-radius: 4px;
+	font-size: 13px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 20px;
+}
+
+.homeCatelogDropdownText {
+	line-height: 24px;
+	padding-left: 5px;
+}
+
+.dropdownlistButton {
+	position: absolute;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/DropdownListButton.png) no-repeat center;
+	cursor: pointer;
+}
+
+.dropdownlist {
+	position: absolute;
+	height: 180px;
+	top: 24px;
+	background: #333;
+	border-radius: 4px;
+	z-index: 9;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdownlist li {
+	padding-left: 5px;
+	height: 20px;
+	width: 100%;
+	line-height: 20px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.dropdownlist li:hover {
+	background: #666;
+}
+
+.dropdownlist li:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+.dropdownlist li:last-child {
+	border-radius: 0 0 4px 4px;
+}
+
+.searchCTHome {
+	position: relative;
+	float: right;
+}
+
+.seachButton {
+	background: url(../images/searcherButton.png) no-repeat center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	cursor: pointer;
+}
+
+.headerSmallMenuText {
+	margin: 20px 0 0 0;
+	font-size: 12px;
+	float: right;
+}
+
+.headerSmallMenuA {
+	font-size: 12px;
+	border-left: #DDD 1px solid;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-left: 15px;
+	float: right;
+	position: relative;
+}
+
+.menuText {
+	position: relative;
+	float: left;
+	text-shadow: 0px -2px 0px #000;
+	margin: 10px 15px;
+	text-align: center;
+	width: auto;
+	height: 17px;
+	font-size: 16px;
+	color: #DDD;
+	cursor: pointer;
+}
+
+.menuText:hover,.curPage {
+	float: left;
+	text-shadow: 0px 0px 10px #00C6FF;
+	margin: 10px 15px;
+	text-align: center;
+	width: auto;
+	height: 17px;
+	font-size: 16px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.headerMenu {
+	background: url(../images/HeaderMenuBackground.png) repeat;
+	border-radius: 4px;
+	width: 100%;
+	height: 39px;
+	border: 1px #4D4D4D solid;
+	position: relative;
+	float: left;
+}
+
+.headerMenuHightlight {
+	background: url(../images/HeaderMenuHightlight.png) no-repeat center;
+	width: 1050px;
+	height: 1px;
+	position: absolute;
+	left: 50%;
+	margin-left: -525px;
+}
+
+.menuHalo {
+	position: absolute;
+	margin-left: -110px;
+	width: 220px;
+	height: 30px;
+	top: 4px;
+	background: url(../images/Hightlight_2fr.png)
+}
+
+.HBOSRLOGO {
+	width: 286px;
+	height: 50px;
+	background: url(../images/HBOSRLOGO.png);
+	margin: 20px 0;
+	float: left;
+}
+
+.highLightSpot {
+	background: url(../images/lightingSpot.png) no-repeat center;
+	width: 1060px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -540px;
+}
+
+.menuSearcher {
+	background: url(../images/searcherBackground.png) no-repeat;
+	height: 27px;
+	width: 203px;
+	padding-left: 10px;
+	padding-right: 25px;
+	border: 0;
+	color: #DDDDDD;
+	margin: 4px 5px;
+	font-size: 12px;
+	position: relative;
+	padding-top: 6px \9;
+}
+/*footer======================================*/
+footer {
+	background: url(../images/footerBackground.png) repeat-x;
+	height: 28px;
+	width: 1060px;
+	margin: 20px auto;
+	margin-bottom: 0;
+	border: 1px solid #474949;
+	border-top: 1px solid #686869;
+	border-radius: 4px;
+	position: relative;
+}
+
+.footerSmallMenuText {
+	margin: 8px 10px 0 0;
+	font-size: 11px;
+	float: right;
+}
+
+.footerSmallMenuA {
+	font-size: 11px;
+	margin: 8px 10px 0 0;
+	padding-left: 10px;
+	float: right;
+}
+
+.yoGet {
+	float: right;
+	font-size: 10;
+	height: 17px;
+	width: auto;
+	margin: 9px 0 0 0;
+	color: #DDDDDD;
+}
+
+.fixedBottom {
+	position: fixed;
+	left: 50%;
+	margin-left: -530px;
+	bottom: 0px;
+}
+/*BODY======================================*/
+.HomeContainer {
+	margin: 40px auto;
+	width: 1060px;
+	min-height: 300px;
+	position: relative;
+}
+
+.loginCT {
+	min-height: 800px;
+	width: 100%;
+}
+
+.HBOLOGOLogin {
+	width: 253px;
+	height: 70px;
+	background: url(../images/HBO_SR_Logo_login.png) no-repeat center;
+	position: relative;
+	top: 41px;
+	left: 50%;
+	margin-left: -126px;
+}
+
+.HBOOPPS {
+	width: 253px;
+	height: 70px;
+	background: url(../images/HBO_SR_Opps.png) no-repeat center;
+	position: relative;
+	top: 41px;
+	left: 50%;
+	margin-left: -126px;
+}
+
+.OppsContent {
+	width: 700px;
+	height: auto;
+	position: absolute;
+	top: 206px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+.OppsContent h4 {
+	position: relative;
+	font-size: 16px;
+	text-align: center;
+}
+
+.OppsContent a {
+	color: #3399FF;
+}
+
+.loginInputCT {
+	width: 253px;
+	height: 25px;
+	position: absolute;
+	top: 206px;
+	left: 50%;
+	margin-left: -126px;
+}
+
+.loginInput {
+	float: right;
+	padding: 0 5px;
+	width: 170px;
+	height: 25px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+}
+
+.loginInputCT h4 {
+	float: right;
+	font-size: 15px;
+	margin-right: 5px;
+	line-height: 25px;
+	color: white;
+}
+
+.loginInputCT a {
+	color: #0090BF;
+	float: right;
+	font-size: 12px;
+	line-height: 14px;
+	width: 170px;
+	margin-bottom: 5px;
+}
+
+.loginInputCT a:hover {
+	text-decoration: underline;
+}
+
+.loginBT {
+	float: right;
+	width: 72px;
+	height: 25px;
+	background: url(../images/Login_button.png) no-repeat;
+	cursor: pointer;
+	border: 0;
+}
+/*SplashImages==================*/
+.splashImagesCT {
+	width: 100%;
+	height: 371px;
+	list-style: none outside none;
+	padding: 0;
+	position: relative;
+}
+
+roundabout-moveable-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.preImageCT {
+	width: 541px;
+	height: 306px;
+	border-radius: 6px;
+	border: 1px solid #5F656D;
+	top: 45px;
+	position: absolute;
+	box-shadow: 0 0 20px rgba(0, 198, 255, .6);
+}
+
+.nextImageCT {
+	width: 541px;
+	height: 306px;
+	border-radius: 6px;
+	border: 1px solid #5F656D;
+	top: 45px;
+	right: 0;
+	position: absolute;
+	box-shadow: 0 0 20px rgba(0, 198, 255, .6);
+}
+
+.coruImageCT {
+	width: 658px;
+	height: 371px;
+	border: 1px solid #5F656D;
+	border-radius: 6px;
+	left: 50%;
+	margin-left: -328px;
+	box-shadow: 0 0 20px rgba(0, 198, 255, .9);
+	position: absolute;
+}
+
+.splashImagePreBT,.splashImageNextBT {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	cursor: pointer;
+	top: 180px;
+}
+
+.splashImagePreBT {
+	left: 220px;
+	background: url(../images/splashImagePreButton.png) no-repeat;
+}
+
+.splashImageNextBT {
+	right: 220px;
+	background: url(../images/splashImageNextButton.png) no-repeat;
+}
+
+.imageShadowLeft {
+	position: absolute;
+	background: url(../images/imageShadowLeft.png) repeat-y;
+	height: 305px;
+	width: 150px;
+	left: -145px;
+	bottom: 20px;
+}
+
+.imageShadowRight {
+	position: absolute;
+	background: url(../images/imageShadowRight.png) repeat-y;
+	height: 305px;
+	width: 150px;
+	right: -145px;
+	bottom: 20px;
+}
+
+.coruSplashImage {
+	width: 656px;
+	height: 369px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.preSplashImage {
+	width: 541px;
+	height: 304px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.nextSplashImage {
+	width: 541px;
+	height: 304px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.splashImageTitleCT {
+	width: 658px;
+	height: 60px;
+	position: absolute;
+	top: 266px;
+	left: 50%;
+	border-radius: 0 0 5px 5px;
+	margin-left: -328px;
+}
+
+.splashImageBG {
+	width: 300px;
+	height: 65px;
+	position: absolute;
+	border-radius: 0 5px 5px 0;
+	background: #000;
+	opacity: 0.5;
+}
+
+.splashImageTitle0 {
+	margin: 10px 0 0 20px;
+	position: relative;
+	color: #FFF;
+}
+
+.splashImageTitle1 {
+	margin: 5px 0 0 20px;
+	position: relative;
+	color: #FFF;
+}
+
+.coruImageReflact {
+	border: 1px #333333 solid;
+	width: 656px;
+	height: 200px;
+	border-radius: 5px;
+	background: url(../images/SplashImage_1.jpg) bottom center no-repeat;
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	transform: scaleY(-1);
+	opacity: 0.5;
+	filter: alpha(opacity = '50');
+	margin-top: 1px;
+}
+
+.preImageReflact,.nextImageReflact {
+	width: 539px;
+	height: 200px;
+	border-radius: 5px;
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	transform: scaleY(-1);
+	opacity: 0.3;
+	filter: alpha(opacity = '30');
+	margin-top: 1px;
+}
+
+.preImageReflact {
+	background: url(../images/SplashImage_2.jpg) bottom center no-repeat;
+	background-size: 100%;
+}
+
+.nextImageReflact {
+	background: url(../images/SplashImage_3.jpg) bottom center no-repeat;
+	background-size: 100%;
+}
+
+.shadowGround {
+	background: url(../images/shadowGround.png) no-repeat center;
+	position: absolute;
+	height: 226px;
+	width: 1060px;
+	top: 371px;
+}
+/*Featured==============*/
+.featuredCT {
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.featureTitle {
+	width: 100%;
+	height: 20px;
+}
+
+.featureTitle h1 {
+	font-weight: 100;
+	font-size: 25px;
+	color: #DDD;
+}
+
+.featuresCT {
+	float: left;
+	width: 1020px;
+	height: 150px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.featuresCT div:first-child {
+	margin-left: 0px
+}
+
+.nextButton,.preButton {
+	margin-top: 20px;
+	width: 20px;
+	height: 105px;
+	cursor: pointer;
+	float: left;
+}
+
+.nextButton {
+	background: url(../images/nextButton.png);
+}
+
+.nextButton:Hover {
+	background: url(../images/nextButtonHover.png);
+}
+
+.preButton {
+	background: url(../images/preButton.png)
+}
+
+.preButton:hover {
+	background: url(../images/preButtonHover.png)
+}
+
+.features {
+	margin-left: 21px;
+	width: 187px;
+	height: 150px;
+	float: left;
+	display: table-cell;
+}
+
+.featuresImage,.newlyAImage {
+	border-radius: 4px;
+	border: 1px solid #467f9f;
+	float: left;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+
+.imageTitle1 {
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.imageTitle2 {
+	float: left;
+	width: 100%;
+	font-size: 11px;
+	font-weight: 100;
+	cursor: pointer;
+}
+/*Newly Available==============*/
+.newlyACT {
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.newlyATitle {
+	width: 100%;
+	height: 20px;
+}
+
+.newlyAvaCT {
+	float: left;
+	width: 1020px;
+	height: 150px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.newlyAvaCT div:first-child {
+	margin-left: 0px
+}
+
+.newlyAvailables {
+	margin-left: 21px;
+	width: 187px;
+	height: 150px;
+	float: left;
+}
+/*SeriesPage=====Series==============*/
+.seriesCT,.productsCT,.seasonCT {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.seriesTitle,.seasonTitle {
+	width: 100%;
+	height: 20px;
+}
+
+.seriesTitle h1,.seasonTitle h1 {
+	float: left;
+	width: auto;
+	height: 20px;
+}
+
+.seriesImagesCT {
+	width: 1040px;
+	height: auto;
+	margin: 20px 9px 0 9px;
+	overflow: hidden;
+}
+
+.series,.episode {
+	margin: 0 11px 0 10px;
+	width: 187px;
+	height: 150px;
+	float: left;
+}
+
+.SRSeriesIcon {
+	float: right;
+	margin: 0 5px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.catagoryIcon {
+	width: 70px;
+	height: 18px;
+	background: url(../images/SR_Icon_Catagory.png)
+}
+
+.AtoZIcon {
+	width: 28px;
+	height: 18px;
+	background: url(../images/SR_Icon_AtoZ.png);
+}
+
+.listIcon {
+	width: 28px;
+	height: 18px;
+	background: url(../images/SR_Icon_list.png);
+}
+
+.thumbnailIcon {
+	width: 28px;
+	height: 18px;
+	background: url(../images/SR_Icon_thumbnail.png);
+}
+
+.arrangeIconOn {
+	background-position: bottom;
+}
+
+.arrangeIconOff {
+	background-position: top;
+}
+
+.iconSlice {
+	float: right;
+	width: 2px;
+	height: 18px;
+	margin: 0 5px;
+	background: white;
+}
+
+.seriesListCT {
+	width: 1040px;
+	height: auto;
+	margin: 20px 9px 0 9px;
+	font-size: 12px;
+	line-height: 12px;
+	overflow: hidden;
+}
+
+.seriesList,.seriesList td {
+	border-collapse: collapse;
+	border-bottom: 1px dotted #888888;
+	padding-left: 10px;
+}
+
+.seriesList tr {
+	transition: all 0.2s;
+	height: 25px;
+}
+
+.seriesList tr:first-child {
+	height: 25px;
+	background: #333;
+	border-bottom: 1px solid #888888;
+}
+
+.seriesList tr:hover {
+	height: 25px;
+	background: #555;
+}
+
+.listTitle {
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 100;
+	cursor: pointer;
+}
+/*ProductPage=====Product==============*/
+.productLeftSection {
+	width: 436px;
+	float: left;
+}
+
+.productPicture {
+	background: url(../images/boardwalkEmpire_seriesFace.png);
+	width: 436px;
+	height: 246px;
+	border: 1px #636873 solid;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px rgba(0, 166, 225, .5);
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.playPressButton {
+	background: url(../images/SR_Icon_thumbnail_Play.png) no-repeat center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 18px;
+	opacity: 0.1;
+	cursor: pointer;
+}
+
+.playPressButton:hover {
+	opacity: .5;
+}
+
+.seasonListCT {
+	width: 100%;
+	margin-top: 10px;
+	float: left
+}
+
+.productRightSection {
+	width: 624px;
+	heiht: auto;
+	float: left;
+}
+
+.seasonLeftSection {
+	min-height: 246px;
+}
+
+.SeasonTitle,.productTitle {
+	width: 100%;
+	float: left;
+}
+
+.seasons {
+	margin: 0 15px;
+	width: 187px;
+	height: 150px;
+	float: left;
+}
+
+.episodelist {
+	margin-left: 10px;
+}
+
+.productTitle {
+	width: 100%;
+	height: 25px;
+	float: left;
+	line-height: 20px;
+	font-size: 25px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 14px;
+	color: #FFF
+}
+
+.productSubTitle {
+	float: left;
+	font-size: 17px;
+	height: 25px;
+	line-height: 20px;
+	margin: -8px 0 14px 20px;
+	width: 100%;
+}
+
+.productInfoCell {
+	width: 100%;
+	min-height: 25px;
+	float: left;
+}
+
+.productInfoName {
+	width: 160px;
+	height: 12px;
+	float: left;
+	text-align: right;
+}
+
+.productInfo {
+	width: 410px;
+	padding-left: 10px;
+	float: left;
+}
+
+.productInfoText {
+	margin: 0px 10px 0 20px;
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	line-height: 14px
+}
+
+.productInfoText img {
+	margin: 2px 5px
+}
+
+.productSyno,.productCast,.productAwards,.productRecep,.productLang {
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 20px;
+	float: left;
+}
+
+.productSyno {
+	background: url(../images/product_icon_intro.png);
+}
+
+.productCast {
+	background: url(../images/product_icon_Cast.png);
+}
+
+.productAwards {
+	background: url(../images/product_icon_Awards.png);
+}
+
+.productRecep {
+	background: url(../images/product_icon_reception.png);
+}
+
+.productLang {
+	background: url(../images/product_icon_lan.png);
+}
+
+.productInfoTitle {
+	font-size: 15px;
+	margin: 10px 10px 0 20px;
+	color: #999;
+}
+
+.quoteContent {
+	margin: 0px 10px 10px 20px;
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	line-height: 14px
+}
+
+.quotesList,.awards {
+	margin: 0 0 11px;
+	width: 100%;
+	min-height: 25px;
+	float: left;
+}
+
+.popupCT {
+	background: url("../images/BlackMask_BG.png") repeat scroll 0 0
+		transparent;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+
+.popupWindow {
+	background: none repeat scroll 0 0 #000000;
+	border: 1px solid #0066CC;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 5px #008DFF;
+	min-height: 670px;
+	left: 50%;
+	margin-left: -443px;
+	margin-top: -325px;
+	padding: 5px;
+	position: absolute;
+	top: 50%;
+	width: 885px;
+}
+
+.popupTitle,.videoTime {
+	height: 20px;
+	margin: 5px;
+	width: 100%;
+}
+
+.videoTime {
+	position: absolute;
+	bottom: 31px
+}
+
+.popupTitle h1,.videoTime h1 {
+	float: left;
+	line-height: 20px;
+	margin-right: 20px;
+}
+
+.popupTitle h4,.videoTime h4 {
+	line-height: 28px;
+}
+
+.playerCtrlPanel {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background: #000;
+	bottom: 0;
+	opacity: 0.1;
+}
+
+.playerCtrlPanel:hover {
+	opacity: 1;
+}
+
+.playerCT {
+	background: url(../images/playing.jpg);
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	height: 490px;
+	margin: 5px;
+	position: relative;
+	width: 864px;
+}
+
+.timelineCT {
+	background: none repeat scroll 0 0 #5C6166;
+	border-radius: 3px 3px 3px 3px;
+	bottom: 0;
+	height: 6px;
+	position: absolute;
+	width: 100%;
+}
+
+.timeLoaded {
+	background: none repeat scroll 0 0 #7D858C;
+	border-radius: 3px 3px 3px 3px;
+	bottom: 0;
+	height: 6px;
+	position: absolute;
+	width: 38%;
+}
+
+.timePlayed {
+	background: none repeat scroll 0 0 #2082C1;
+	border-radius: 3px 3px 3px 3px;
+	bottom: 0;
+	height: 6px;
+	position: absolute;
+	width: 20%;
+}
+
+.timelineButton {
+	background: none repeat scroll 0 0 #DFE2E5;
+	border-radius: 3px 3px 3px 3px;
+	bottom: -1px;
+	cursor: pointer;
+	height: 8px;
+	left: 20%;
+	margin-left: -4px;
+	position: absolute;
+	width: 8px;
+}
+
+.timelineButton:hover {
+	box-shadow: 0 0 6px #FFFFFF;
+}
+
+.playerCtrlerCT {
+	position: absolute;
+	height: 20px;
+	margin: 5px;
+	width: 100%;
+	bottom: 6px;
+}
+
+.playerButtonsCT {
+	height: 20px;
+	margin: 5px;
+	width: 100%;
+}
+
+.playerButton:first-child {
+	margin-left: 0;
+}
+
+.playerLeftButton {
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	margin: 0 5px;
+	opacity: 0.6;
+	width: 25px;
+}
+
+.playerLeftButton:hover {
+	opacity: 1;
+}
+
+.playerRightButton {
+	cursor: pointer;
+	float: right;
+	height: 30px;
+	margin-right: 10px;
+	margin-top: -8px;
+	opacity: 0.6;
+}
+
+.playerRightButton:hover {
+	opacity: 1;
+}
+
+.playerPreviousButton {
+	background: url("../images/PlayerPreviousButton.png") no-repeat scroll 0
+		0 transparent;
+}
+
+.playerBackButton {
+	background: url("../images/PlayerBackButton.png") no-repeat scroll 0 0
+		transparent;
+}
+
+.playerPauseButton {
+	background: url("../images/PlayerPauseButton.png") no-repeat scroll 0 0
+		transparent;
+}
+
+.playerStopButton {
+	background: url("../images/PlayerStopButton.png") no-repeat scroll 0 0
+		transparent;
+}
+
+.playerPlayButton {
+	background: url("../images/PlayerPlayButton.png") no-repeat scroll 0 0
+		transparent;
+}
+
+.playerForwardButton {
+	background: url("../images/PlayerForwardButton.png") no-repeat scroll 0
+		0 transparent;
+}
+
+.playerNextButton {
+	background: url("../images/PlayerNextButton.png") no-repeat scroll 0 0
+		transparent;
+}
+
+.playerSoundVButton {
+	background: url("../images/PlayerSoundVButton.png") no-repeat scroll
+		center center transparent;
+	width: 64px;
+}
+
+.playerSoundCVButton {
+	background: url("../images/PlayerSoundCVButton.png") no-repeat scroll
+		left center transparent;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+}
+
+.playerFullScreenButton {
+	background: url("../images/PlayerFullScreenButton.png") no-repeat scroll
+		center center transparent;
+	width: 25px;
+}
+
+.PlayerBigPlayButton {
+	background: url("../images/playerBigPlayButton.png") no-repeat scroll
+		center center transparent;
+	border-radius: 62.5px 62.5px 62.5px 62.5px;
+	cursor: pointer;
+	height: 125px;
+	left: 50%;
+	margin-left: -62.5px;
+	margin-top: -62.5px;
+	opacity: 0.6;
+	position: absolute;
+	top: 50%;
+	width: 125px;
+}
+
+.PlayerBigPlayButton:hover {
+	border: 1px solid #0066CC;
+	box-shadow: 0 0 5px #008DFF;
+	opacity: 1;
+}
+
+.closePopup {
+	background: url("../images/closePopup.png") no-repeat scroll center
+		center transparent;
+	cursor: pointer;
+	float: right;
+	height: 20px;
+	margin-right: 10px;
+	opacity: 0.6;
+	width: 20px;
+}
+
+.closePopup:hover {
+	opacity: 1;
+}
+
+.metaDataCT {
+	position: relative;
+	float: left;
+	min-height: 118px;
+	width: 100%;
+}
+
+.metaDataCell {
+	width: 100%;
+	float: left;
+	min-height: 15px;
+	max-height: 54px;
+	margin-top: 5px;
+	padding-right: 20px;
+}
+
+.PlayerMetaName {
+	float: left;
+	width: 16%;
+	min-height: 15px;
+	line-height: 12px;
+	font-size: 14px;
+	text-align: right;
+}
+
+.PlayerMetaData {
+	padding-left: 10px;
+	float: left;
+	width: 83%;
+	min-height: 15px;
+	line-height: 15px;
+	font-size: 12px;
+}
+
+.thumbPlayIcon {
+	background: url(../images/SR_Icon_thumbnail_Play.png) no-repeat center;
+	width: 185px;
+	height: 105px;
+	position: absolute;
+	left: 50%;
+	margin-left: -92px;
+	top: 50%;
+	margin-top: -75px;
+	cursor: pointer;
+	border-radius: 27px;
+	opacity: 0.1;
+}
+
+.thumbPlayIcon:hover {
+	opacity: .5;
+}
+
+.contractCT {
+	width: 800px;
+	height: auto;
+	max-height: 600px;
+	overflow: auto;
+	margin: 100px auto 20px auto;
+	position: relative;
+	background: #282828;
+	border-top: 1px solid #1E1E1E;
+	border-left: 1px solid #1E1E1E;
+	border-bottom: 1px solid #3E3E3E;
+	border-right: 1px solid #3E3E3E;
+}
+
+.contractCT h4 {
+	font-size: 14px;
+	margin: 10px;
+}
+
+.contractCT h3 {
+	margin: 10px;
+	position: relative;
+	font-size: 16px;
+	text-align: center;
+	color: #39F;
+}
+
+.agreeSec {
+	width: 220px;
+	height: 40px;
+	margin: 30px auto;
+	position: relative;
+}
+
+.contractBT {
+	margin-left: 20px;
+	background: url(../images/LoginBTBG.png) repeat-x;
+	height: 25px;
+	width: 80px;
+	border: 1px solid #06F;
+	border-radius: 4px;
+	color: #036;
+	cursor: pointer;
+	line-height: 20px;
+}
+
+.setPassInputCT {
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 206px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.setPassInputCT h4 {
+	float: right;
+	font-size: 15px;
+	margin-right: 5px;
+	line-height: 25px;
+	color: white;
+}
+
+.setPassRuls {
+	position: absolute;
+	top: 49px;
+	left: 309px;
+	color: #C0D0D0;
+	float: right;
+	font-size: 12px;
+	line-height: 14px;
+	width: 175px;
+	margin-bottom: 15px;
+	margin-top: -10px;
+}
+
+.ACInput {
+	float: right;
+	padding: 0 5px;
+	width: 170px;
+	height: 25px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #34606d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 15px;
+	color: #333;
+	font-size: 12px;
+}
+
+.DisInput {
+	background: #BBB;
+	color: #666;
+}
+
+.ACBT {
+	float: right;
+	margin-left: 20px;
+	background: url(../images/LoginBTBG.png) repeat-x;
+	height: 25px;
+	width: 70px;
+	border: 1px solid #06F;
+	border-radius: 4px;
+	color: #FFF;
+	cursor: pointer;
+	line-height: 20px;
+}
+
+.grey {
+	background: url(../images/greybt.png) repeat-x;
+	border: 1px solid #333;
+}
+
+.disabled {
+	background: url(../images/greybt.png) repeat-x;
+	border: 1px solid #333;
+	color: #AAA;
+}
+
+.warningMasg {
+	position: fixed;
+	top: 0;
+	min-height: 27px;
+	width: 100%;
+	background: url(../images/Warning.png) repeat-x;
+	background-size: 100%;
+	box-shadow: 0 0 10px #2FFFFF;
+}
+
+.warningicon {
+	background: url(../images/Warningicon.png) no-repeat center;
+	margin-top: 1px;
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+	float: left;
+}
+
+.warningMasg strong {
+	float: left;
+	font-size: 14px;
+	line-height: 27px;
+	margin-left: 5px;
+	font-weight: bold;
+	color: black;
+}
+
+.warningMasg h5 {
+	float: left;
+	font-size: 12px;
+	line-height: 27px;
+	margin-left: 10px;
+	font-weight: 100;
+	color: black;
+}
+
+.closeWarning {
+	float: right;
+	margin-top: 1px;
+	background: url(../images/closeWarningIcon.png) no-repeat center;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+/*.acountMenuIcon{width: 8px; height: 8px; float: right; background: none repeat scroll 0% 0% rgb(255, 255, 255); margin-left: 7px; margin-top: 1px; border-radius: 5px 5px 0px 5px; transform: rotate(45deg); border: 1px solid rgb(227, 227, 237);}
+
+.acountMenuIcon > div{margin: 1px; background: none repeat scroll 0% 0% rgb(255, 0, 0); height: 4px; width: 4px; border-radius: 4px; border: 1px solid rgb(191, 16, 16);}*/
+.acountMenuIcon {
+	width: 8px;
+	height: 8px;
+	float: right;
+	background: url(../images/DropdownListButton.png) no-repeat center;
+	margin-left: 7px;
+	margin-top: 1px
+}
+
+.accountMenu {
+	background: none repeat scroll 0 0 #252525;
+	border: 1px solid #1F1F1F;
+	border-radius: 4px;
+	height: auto;
+	left: 15px;
+	margin-top: 5px;
+	position: absolute;
+	/* min-width: 90px;*/
+	z-index: 100;
+}
+
+.accountMenu>ul {
+	padding: 0;
+	list-style: none;
+}
+
+.accountMenu>ul>li {
+	border-bottom: 1px solid #3C3C3C;
+	padding: 4px 4px 4px 10px;
+	cursor: pointer;
+}
+
+.accountMenu>ul>li:hover {
+	background: #666;
+}
+
+.accountMenu>ul>li:last-child {
+	border-bottom: none;
+	border-radius: 0 0 4px 4px;
+}
+
+.accountMenu>ul>li:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+.headerSmallMenuText {
+	position: relative;
+}
+
+.inputRow {
+	width: 100%;
+	min-height: 25px;
+	float: left;
+	margin-top: 10px;
+}
+
+.inputName {
+	width: 200px;
+	height: auto;
+	min-height: 25px;
+	float: left;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: right;
+}
+
+.inputCt {
+	height: auto;
+	width: auto;
+	float: left;
+	margin-left: 10px;
+}
+
+.normalPageInput {
+	float: left;
+	padding: 0 5px;
+	width: 400px;
+	height: 25px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+}
+
+.normalDateInput {
+	float: left;
+	padding: 0 5px;
+	width: 180px;
+	height: 25px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+}
+
+.normalPageTextArea {
+	padding: 5px;
+	float: left;
+	width: 400px;
+	height: 125px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+	resize: none;
+}
+
+.listSelecterCT {
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 150px;
+	margin-bottom: 5px;
+}
+
+.listSelecter {
+	padding: 5px;
+	float: left;
+	width: 100%;
+	height: 125px !important;
+	background: #FFF;
+	border-radius: 0 0 4px 4px;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+}
+
+.listSelecter option {
+	color: #333;
+}
+
+.NormalButton {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63b8ee
+		), color-stop(1, #468ccf));
+	background: -moz-linear-gradient(center top, #63b8ee 5%, #468ccf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee',
+		endColorstr='#468ccf');
+	background-color: #63b8ee;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-left-radius: 4px;
+	text-indent: 0px;
+	border: 1px solid #3866a3;
+	color: #14396a;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	height: 25px;
+	line-height: 24px;
+	width: 84px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #7cacde;
+	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+}
+
+.NormalButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #468ccf
+		), color-stop(1, #63b8ee));
+	background: -moz-linear-gradient(center top, #468ccf 5%, #63b8ee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf',
+		endColorstr='#63b8ee');
+	background-color: #468ccf;
+}
+
+.dateIcon {
+	height: 25px;
+	width: 25px;
+	background: url(../images/SR_icon_Datainput.png) center no-repeat;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.AddRemoveArea {
+	height: 125px;
+	width: 40px;
+	float: left;
+}
+
+.SR-AddIcon {
+	width: 25px;
+	height: 25px;
+	background: url(../images/SR_Icon_ADD.png) center no-repeat;
+	float: left;
+	margin: 7px;
+	cursor: pointer;
+}
+
+.SR-RemoveIcon {
+	width: 25px;
+	height: 25px;
+	background: url(../images/SR_Icon_Remove.png) center no-repeat;
+	float: left;
+	margin: 7px;
+	cursor: pointer;
+}
+
+.listSearch {
+	width: 100%;
+	height: 20px;
+	float: left;
+	border-radius: 4px 4px 0 0;
+	border: 1px solid #44707d;
+	box-shadow: inset 2px 2px 3px #666;
+	padding: 3px;
+	background: #FFF;
+	border-width: 1px;
+	color: #333;
+}
+
+.select-searcherButton {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/Searcher_Icon.png);
+	cursor: pointer;
+}
+
+.listSolid {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	margin: 3px;
+	color: #333;
+	cursor: pointer;
+}
+
+.listSolid:focus {
+	color: #FFF;
+	background: #666;
+}
+
+.pageMask {
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	position: fixed;
+	background: url(../images/BlackMask_BG.png) repeat;
+}
+
+.progressContainer {
+	margin: 20% auto;
+	width: 30%;
+	height: 43px;
+	background: url(../images/HeaderMenuBackground.png) repeat;
+	background-size: 62px;
+	border: 1px #4D4D4D solid;
+	border-radius: 4px;
+	padding: 10px;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.coruImageReflact {
+	display:none;
+}	
+.preImageReflact, .nextImageReflact {
+	display:none;
+}
